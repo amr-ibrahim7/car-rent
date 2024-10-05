@@ -22,12 +22,6 @@ const CarCard = ({ car }: CarCardProps) => {
     [city_mpg, year]
   );
 
-  // // fetcher function for SWR
-  // const fetcher = async (car: CarsProps) => {
-  //   const url = await generateCarImageUrl(car);
-  //   return url;
-  // };
-
   const fetcher = async (car: CarsProps) => {
     const url = await generateCarImageUrl(car);
     await new Promise((resolve) => setTimeout(resolve, 500)); // تأخير 500 مللي ثانية
