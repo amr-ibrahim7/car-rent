@@ -4,7 +4,6 @@ import { CarsProps } from "@/types";
 import { calculateCarRent, generateCarImageUrl } from "@/utils";
 import Image from "next/image";
 import { useMemo, useState } from "react";
-import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import useSWR from "swr";
 import CardDetails from "./CardDetails";
